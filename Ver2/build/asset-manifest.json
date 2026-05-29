@@ -1,27 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.15f3b5c2.css",
-    "main.js": "/static/js/main.05943071.js",
+    "main.css": "/static/css/main.9ded4ff7.css",
+    "main.js": "/static/js/main.986edfa2.js",
     "static/js/453.a991eea1.chunk.js": "/static/js/453.a991eea1.chunk.js",
-    "static/media/ripley2.jpg": "/static/media/ripley2.d78d102fdbc58c11a51d.jpg",
-    "static/media/malcolm2.jpg": "/static/media/malcolm2.3f12423e65226b813e6c.jpg",
-    "static/media/ripley1.jpg": "/static/media/ripley1.074be395ffd130f33fe9.jpg",
-    "static/media/ludgate1.jpg": "/static/media/ludgate1.d995c783e1fc817c71c3.jpg",
-    "static/media/kenobi4.jpg": "/static/media/kenobi4.d7cfe088ed80a2ea164a.jpg",
-    "static/media/kenobi2.jpg": "/static/media/kenobi2.634822d0b12f682daaef.jpg",
-    "static/media/took1.jpg": "/static/media/took1.ae4a4576935e16df8b64.jpg",
-    "static/media/malcolm1.jpg": "/static/media/malcolm1.a6a8c1e07bd9b045195d.jpg",
-    "static/media/took2.jpg": "/static/media/took2.c6f75bde36a9551b668a.jpg",
-    "static/media/kenobi3.jpg": "/static/media/kenobi3.8d50c2c1b2264c361e85.jpg",
-    "static/media/kenobi1.jpg": "/static/media/kenobi1.064e6cf60fd9ef7082d6.jpg",
-    "static/media/ouster.jpg": "/static/media/ouster.32f407c5b0e1e5b40d73.jpg",
     "index.html": "/index.html",
-    "main.15f3b5c2.css.map": "/static/css/main.15f3b5c2.css.map",
-    "main.05943071.js.map": "/static/js/main.05943071.js.map",
+    "main.9ded4ff7.css.map": "/static/css/main.9ded4ff7.css.map",
+    "main.986edfa2.js.map": "/static/js/main.986edfa2.js.map",
     "453.a991eea1.chunk.js.map": "/static/js/453.a991eea1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.15f3b5c2.css",
-    "static/js/main.05943071.js"
+    "static/css/main.9ded4ff7.css",
+    "static/js/main.986edfa2.js"
   ]
 }

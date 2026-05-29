@@ -44,7 +44,7 @@ function UserDetail({ setTopBarContext }) {
               Occupation: {user.occupation}
             </Typography>
             <Typography variant="body1" paragraph style={{ marginTop: '10px' }}>
-              {user.description}
+              <span dangerouslySetInnerHTML={{ __html: user.description }} />
             </Typography>
             <Button
                 variant="contained"

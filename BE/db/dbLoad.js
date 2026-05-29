@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
-require("dotenv").config();
+const path = require("path");
+require("dotenv").config({ path: path.join(__dirname, "../.env") });
+const bcrypt = require("bcrypt");
 
 const models = require("../modelData/models.js");
 
@@ -11,6 +13,7 @@ const versionString = "1.0";
 
 async function dbLoad() {
   try {
+    console.log("DEBUG LOAD: Connecting to URL =", process.env.DB_URL);
     await mongoose.connect(process.env.DB_URL);
     console.log("Successfully connected to MongoDB Atlas!");
   } catch (error) {
@@ -26,7 +29,10 @@ async function dbLoad() {
   const userModels = models.userListModel();
   const mapFakeId2RealId = {};
   for (const user of userModels) {
+    const hashedPassword = await bcrypt.hash(user.password, 10);
     const userObj = new User({
+      login_name: user.login_name,
+      password: hashedPassword,
       first_name: user.first_name,
       last_name: user.last_name,
       location: user.location,

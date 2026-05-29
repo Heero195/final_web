@@ -1,8 +1,10 @@
 const mongoose = require("mongoose");
-require("dotenv").config();
+const path = require("path");
+require("dotenv").config({ path: path.join(__dirname, "../.env") });
 
 async function dbConnect() {
   try {
+    console.log("DEBUG DB: Connecting to URL =", process.env.DB_URL);
     await mongoose.connect(process.env.DB_URL);
     console.log("Successfully connected to MongoDB Atlas!");
   } catch (error) {

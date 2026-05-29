@@ -1,0 +1,129 @@
+.login-register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 120px);
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.login-register-card {
+  width: 100%;
+  max-width: 440px;
+  background: rgba(30, 41, 59, 0.7) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
+  color: #f8fafc !important;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-register-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5) !important;
+}
+
+.login-register-header {
+  text-align: center;
+  padding: 32px 24px 16px 24px;
+}
+
+.login-register-title {
+  font-family: 'Outfit', 'Inter', sans-serif !important;
+  font-weight: 700 !important;
+  background: linear-gradient(to right, #60a5fa, #a78bfa, #f472b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 8px !important;
+}
+
+.login-register-subtitle {
+  color: #94a3b8 !important;
+  font-size: 0.95rem !important;
+}
+
+.login-register-tabs {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 16px;
+}
+
+.login-register-tab {
+  color: #94a3b8 !important;
+  font-weight: 600 !important;
+  font-family: 'Inter', sans-serif !important;
+  text-transform: none !important;
+}
+
+.login-register-tab.Mui-selected {
+  color: #60a5fa !important;
+}
+
+.login-register-form {
+  padding: 0 24px 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-register-input {
+  background: rgba(15, 23, 42, 0.5);
+  border-radius: 8px;
+}
+
+.login-register-input .MuiOutlinedInput-root {
+  color: #f8fafc !important;
+}
+
+.login-register-input .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.login-register-input .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.login-register-input .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #60a5fa !important;
+}
+
+.login-register-input label {
+  color: #94a3b8 !important;
+}
+
+.login-register-input label.Mui-focused {
+  color: #60a5fa !important;
+}
+
+.login-register-button {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%) !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  font-family: 'Inter', sans-serif !important;
+  text-transform: none !important;
+  padding: 12px !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 14px 0 rgba(59, 130, 246, 0.4) !important;
+  transition: all 0.2s ease !important;
+}
+
+.login-register-button:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%) !important;
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px 0 rgba(59, 130, 246, 0.6) !important;
+}
+
+.login-register-error {
+  background-color: rgba(239, 68, 68, 0.15) !important;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #fca5a5 !important;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

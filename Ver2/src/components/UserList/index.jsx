@@ -14,14 +14,18 @@ import fetchModel from "../../lib/fetchModelData";
 /**
  * Define UserList, a React component of Project 4.
  */
-function UserList () {
+function UserList ({ currentUser }) {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
-        fetchModel("/user/list")
-            .then(res => setUsers(res.data))
-            .catch(err => console.error("Error fetching user list:", err));
-    }, []);
+        if (currentUser) {
+            fetchModel("/user/list")
+                .then(res => setUsers(res.data))
+                .catch(err => console.error("Error fetching user list:", err));
+        } else {
+            setUsers([]);
+        }
+    }, [currentUser]);
 
     return (
       <div>
